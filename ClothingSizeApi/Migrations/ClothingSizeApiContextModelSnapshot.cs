@@ -203,6 +203,150 @@ namespace ClothingSizeApi.Migrations
                             XXXXL = "24"
                         });
                 });
+
+            modelBuilder.Entity("ClothingSizeApi.Models.Size", b =>
+                {
+                    b.Property<int>("SizeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("Chest")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ClothingType")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Gender")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<int>("Hip")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Inseam")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LetterSize")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<double>("Neck")
+                        .HasColumnType("double");
+
+                    b.Property<int>("Sleeve")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Waist")
+                        .HasColumnType("int");
+
+                    b.HasKey("SizeId");
+
+                    b.ToTable("Sizes");
+
+                    b.HasData(
+                        new
+                        {
+                            SizeId = 1,
+                            Chest = 38,
+                            ClothingType = "top",
+                            Gender = "female",
+                            Hip = 30,
+                            Inseam = 31,
+                            LetterSize = "s",
+                            Neck = 15.0,
+                            Sleeve = 32,
+                            Waist = 32
+                        },
+                        new
+                        {
+                            SizeId = 2,
+                            Chest = 38,
+                            ClothingType = "top",
+                            Gender = "male",
+                            Hip = 30,
+                            Inseam = 31,
+                            LetterSize = "s",
+                            Neck = 16.0,
+                            Sleeve = 32,
+                            Waist = 32
+                        },
+                        new
+                        {
+                            SizeId = 3,
+                            Chest = 38,
+                            ClothingType = "bottom",
+                            Gender = "female",
+                            Hip = 30,
+                            Inseam = 31,
+                            LetterSize = "s",
+                            Neck = 15.5,
+                            Sleeve = 32,
+                            Waist = 32
+                        },
+                        new
+                        {
+                            SizeId = 4,
+                            Chest = 40,
+                            ClothingType = "bottom",
+                            Gender = "male",
+                            Hip = 30,
+                            Inseam = 32,
+                            LetterSize = "m",
+                            Neck = 16.0,
+                            Sleeve = 33,
+                            Waist = 34
+                        },
+                        new
+                        {
+                            SizeId = 5,
+                            Chest = 40,
+                            ClothingType = "top",
+                            Gender = "male",
+                            Hip = 30,
+                            Inseam = 32,
+                            LetterSize = "m",
+                            Neck = 16.5,
+                            Sleeve = 33,
+                            Waist = 34
+                        },
+                        new
+                        {
+                            SizeId = 6,
+                            Chest = 40,
+                            ClothingType = "top",
+                            Gender = "male",
+                            Hip = 30,
+                            Inseam = 32,
+                            LetterSize = "m",
+                            Neck = 16.0,
+                            Sleeve = 33,
+                            Waist = 34
+                        },
+                        new
+                        {
+                            SizeId = 7,
+                            Chest = 42,
+                            ClothingType = "bottom",
+                            Gender = "female",
+                            Hip = 30,
+                            Inseam = 34,
+                            LetterSize = "l",
+                            Neck = 16.5,
+                            Sleeve = 34,
+                            Waist = 36
+                        },
+                        new
+                        {
+                            SizeId = 8,
+                            Chest = 42,
+                            ClothingType = "bottom",
+                            Gender = "female",
+                            Hip = 30,
+                            Inseam = 34,
+                            LetterSize = "l",
+                            Neck = 17.0,
+                            Sleeve = 34,
+                            Waist = 36
+                        });
+                });
 #pragma warning restore 612, 618
         }
     }

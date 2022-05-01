@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zwein\\epicodus\\c#\\ClothingSizeApi.Solution\\ClothingSizeApi\\ClothingSizeApi.csproj": {}
+    "/Users/nakayamas/Desktop/ClothingSizeApi.Solution/ClothingSizeApi/ClothingSizeApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zwein\\epicodus\\c#\\ClothingSizeApi.Solution\\ClothingSizeApi\\ClothingSizeApi.csproj": {
+    "/Users/nakayamas/Desktop/ClothingSizeApi.Solution/ClothingSizeApi/ClothingSizeApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zwein\\epicodus\\c#\\ClothingSizeApi.Solution\\ClothingSizeApi\\ClothingSizeApi.csproj",
+        "projectUniqueName": "/Users/nakayamas/Desktop/ClothingSizeApi.Solution/ClothingSizeApi/ClothingSizeApi.csproj",
         "projectName": "ClothingSizeApi",
-        "projectPath": "C:\\Users\\zwein\\epicodus\\c#\\ClothingSizeApi.Solution\\ClothingSizeApi\\ClothingSizeApi.csproj",
-        "packagesPath": "C:\\Users\\zwein\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zwein\\epicodus\\c#\\ClothingSizeApi.Solution\\ClothingSizeApi\\obj\\",
+        "projectPath": "/Users/nakayamas/Desktop/ClothingSizeApi.Solution/ClothingSizeApi/ClothingSizeApi.csproj",
+        "packagesPath": "/Users/nakayamas/.nuget/packages/",
+        "outputPath": "/Users/nakayamas/Desktop/ClothingSizeApi.Solution/ClothingSizeApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\zwein\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/nakayamas/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -95,8 +95,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.14, 5.0.14]"
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[5.0.16, 5.0.16]"
             }
           ],
           "frameworkReferences": {
@@ -107,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }
