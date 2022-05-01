@@ -46,7 +46,7 @@ namespace ClothingSizeApi
 
                 app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Shelter API");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Clothing API");
             
                 c.RoutePrefix = "";
             });
