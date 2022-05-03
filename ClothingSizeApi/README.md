@@ -1,8 +1,7 @@
 # Project Clothing Size API 
 
-#### By Everyone 
+#### By Zoe Weinstein, Amy Young, Chris Nakayama, Wajma Niazi, Jonathan Delcid 
 
-#### 
 
 ## Technologies Used
 
@@ -22,7 +21,7 @@
 
 ## Setup/Installation Requirements
  
-* Go to GitHub: SOMETHING HERE DON"T FORGET 
+* Go to GitHub: https://github.com/MxZoe/ClothingSizeApi.Solution/tree/main/ClothingSizeApi
 * Clone Repository to your desktop
 * If you haven't already, please download the following: C#, .NET, MySQL Community Server and MySQL Workbench.  Please go to https://www.learnhowtoprogram.com/c-and-net-part-time/getting-started-with-c/installing-c-and-net, if you need to download C# and .NET and  https://www.learnhowtoprogram.com/c-and-net-part-time/getting-started-with-c/installing-and-configuring-mysql, if needed to download MySQL. 
 * Launch the MySQL server with the command mysql -uroot -p[YOUR-PASSWORD-HERE]
@@ -99,11 +98,21 @@ public void Configure(IApplicationBuilder app)
 
 ## API Endpoints
 ```
-* GET /api/Brands 
-*POST /api/Brands 
+*GET /api/Brands 
+*GET /api/Brands?{key}={value}
+**Brand key query options: brandid, clothingtype, gender, xxxs, xxs, xs, s, m, l, xl, xxl, xxxl, xxxxl
 *Get /api/Brands/{id}
+*POST /api/Brands 
 *PUT /api/Brands/{id} 
 *Delete /api/Brands/{id} 
+
+*GET /api/Sizes 
+*GET /api/Sizes?{key}={value}
+**Size key query options: sizeid, clothingtype, gender, lettersize, neck, chest, sleeve, waist, hip inseam
+*Get /api/Sizes/{id}
+*POST /api/Sizes
+*PUT /api/Sizes/{id} 
+*Delete /api/Sizes/{id} 
 ```
 
 ## Known Bugs
@@ -113,4 +122,9 @@ public void Configure(IApplicationBuilder app)
 
 _MIT
 
-Copyright (c) 2022 Everyone
+Copyright (c) 2022 
+Zoe Weinstein <zweinstein@gmail.com>
+Amy Young <youngamy1223@gmail.com>
+Chris Nakayama <cnakayam@gmail.com>	
+Wajma Niazi  <w1niazi@hotmail.com>
+Jonathan Delcid <jdelcid23@gmail.com>
