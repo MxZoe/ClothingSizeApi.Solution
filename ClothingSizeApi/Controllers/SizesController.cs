@@ -22,7 +22,7 @@ namespace ClothingSizeApi.Controllers
 
     // GET: api/Sizes/
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Size>>> Get(string letterSize, string gender, string clothingType, int minimumNeck, int minimumChest, int minimumSleeve,  int minimumWaist,  int minimumHip, int minimumInseam)
+    public async Task<ActionResult<IEnumerable<Size>>> Get(string letterSize, string gender, string clothingType, int neck, int chest, int sleeve,  int waist,  int hip, int inseam)
     {
       var query = _db.Sizes.AsQueryable();
 
@@ -40,31 +40,31 @@ namespace ClothingSizeApi.Controllers
       {
         query = query.Where(entry => entry.LetterSize == letterSize);
       }    
-        if (minimumNeck > 0)
+        if (neck > 0)
       {
-        query = query.Where(entry => entry.Neck == minimumNeck);
+        query = query.Where(entry => entry.Neck == neck);
       }   
   
-      if (minimumChest > 0)
+      if (chest > 0)
       {
-        query = query.Where(entry => entry.Chest == minimumChest);
+        query = query.Where(entry => entry.Chest == chest);
       }  
 
-      if (minimumSleeve > 0)
+      if (sleeve > 0)
       {
-        query = query.Where(entry => entry.Sleeve == minimumSleeve);
+        query = query.Where(entry => entry.Sleeve == sleeve);
       }  
-     if (minimumWaist > 0 )
+      if (waist > 0 )
       {
-        query = query.Where(entry => entry.Waist == minimumWaist);
+        query = query.Where(entry => entry.Waist == waist);
       }  
-     if (minimumHip > 0)
+      if (hip > 0)
       {
-        query = query.Where(entry => entry.Hip == minimumHip);
+        query = query.Where(entry => entry.Hip == hip);
       } 
-     if (minimumInseam >0 )
+      if (inseam > 0 )
       {
-        query = query.Where(entry => entry.Inseam == minimumInseam);
+        query = query.Where(entry => entry.Inseam == inseam);
       } 
     
       return await query.ToListAsync();
