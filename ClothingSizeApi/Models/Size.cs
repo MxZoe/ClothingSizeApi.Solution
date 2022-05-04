@@ -9,7 +9,7 @@ namespace ClothingSizeApi.Models
     public class Size
     {
         public int SizeId { get; set; }
-        //public string Brand { get; set; }
+        public string Brand { get; set; }
         public string ClothingType { get; set; }
         public string Gender { get; set; }
         public string LetterSize { get; set; }
