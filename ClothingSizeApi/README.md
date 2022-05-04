@@ -120,7 +120,7 @@ public void Configure(IApplicationBuilder app)
 
 ## License
 
-_MIT
+MIT License
 
 Copyright (c) 2022 
 Zoe Weinstein <zweinstein@gmail.com>

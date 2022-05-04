@@ -38,11 +38,3 @@ namespace ClothingSizeApi.Models
         public DbSet <Size> Sizes {get; set; }
     }
 }
-
-
-
-
-
-
-   
-   

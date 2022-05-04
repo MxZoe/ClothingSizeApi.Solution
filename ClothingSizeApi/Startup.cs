@@ -18,7 +18,7 @@ namespace ClothingSizeApi
 
         public IConfiguration Configuration { get; }
 
-              public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
 
             services.AddDbContext<ClothingSizeApiContext>(opt =>
@@ -35,7 +35,7 @@ namespace ClothingSizeApi
                 });
             });
         }
-          public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -50,7 +50,7 @@ namespace ClothingSizeApi
             
                 c.RoutePrefix = "";
             });
-      }
+            }
 
             app.UseRouting();
 
